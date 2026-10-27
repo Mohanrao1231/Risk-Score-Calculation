@@ -1,0 +1,19 @@
+{
+    "model": "LightGBM",
+    "positive_class_weight": 2,
+    "decision_threshold": 0.23,
+    "risk_categories": {
+        "Low": "probability < 0.15",
+        "Medium": "0.15 <= probability < 0.30",
+        "High": "probability >= 0.30"
+    },
+    "risk_score": "risk_probability * 100",
+    "test_metrics": {
+        "accuracy": 0.75,
+        "precision": 0.2593,
+        "recall": 0.5833,
+        "f1": 0.359,
+        "roc_auc": 0.6828,
+        "pr_auc": 0.3196
+    }
+}
